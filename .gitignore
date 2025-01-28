@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Logs and screenshots
+logs/
+test-results/
+*.log
+
+# Playwright artifacts
+playwright-report/
+allure-results/
+allure-report/
+
+# OS-specific or IDE-specific
+.DS_Store
+.vscode/
+.idea/

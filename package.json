@@ -1,0 +1,24 @@
+{
+  "name": "com.loopqa.asana",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --config=config/playwright.config.js",
+    "test:headed": "npx playwright test --config=config/playwright.config.js --headed",
+    "test:report": "npx playwright show-report reports",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "keywords": ["playwright", "automation", "testing", "QA"],
+  "author": "Santosh Karad",
+  "license": "MIT",
+  "description": "A data-driven Playwright automation framework for testing a demo application",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "allure-playwright": "^3.0.9",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2"
+  }
+}
